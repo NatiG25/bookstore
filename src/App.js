@@ -9,7 +9,7 @@ function App() {
     <>
       <Header />
       <Routes>
-        <Route path="/" element={<Books title="Atomic Habits" author="James Clear" />} />
+        <Route path="/books" element={<Books />} />
         <Route path="/categories" element={<Categories />} />
       </Routes>
     </>

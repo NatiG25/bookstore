@@ -25,13 +25,14 @@
 
 To get a local copy up and running follow these simple example steps.
 
-- copy this link git@github.com:NatiG25/Math-Magicians.git
+- copy this link git@github.com:NatiG25/Bookstore.git
 - get the directory that you want to clone the repository.
 - open the command prompt in this directory.
-- write git clone git@github.com:NatiG25/Math-Magicians.git
+- write git clone git@github.com:NatiG25/Bookstore.git
 - go to the repository folder in your command prompt cd math-magicians
 - use npm install to install the dependencies.
 - use npm start to start live server.
+
 ## Prerequisites
 
 - Have a working and updated browser
@@ -40,7 +41,7 @@ To get a local copy up and running follow these simple example steps.
 - Basic knowledge in JS and React JS
 ### Setup
 
-- Clone the git repo using this command: git clone git@github.com:NatiG25/Math-Magicians.git
+- Clone the git repo using this command: git clone git@github.com:NatiG25/Bookstore.git
 
 ### Run tests
 

@@ -12,7 +12,9 @@ export default function Book({ title, author }) {
       <ul>
         <li>
           {title}
+          {' '}
           :
+          {' '}
           {author}
         </li>
       </ul>

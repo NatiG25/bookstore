@@ -1,13 +1,26 @@
 import React from 'react';
 import Book from './Book';
 
-export default function Books() {
-  return (
-    <>
-      <main>
-        <Book />
-        <button type="button">Remove</button>
-      </main>
-    </>
-  );
+class Books extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      title: 'Atomic Habits',
+      author: 'James Clear',
+    };
+  }
+
+  render() {
+    const { title, author } = this.state;
+    return (
+      <>
+        <main>
+          <Book title={title} author={author} />
+          <button type="button">Remove</button>
+        </main>
+      </>
+    );
+  }
 }
+
+export default Books;
