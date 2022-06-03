@@ -8,7 +8,7 @@ export default function Header() {
         <h1>Bookstore</h1>
         <nav>
           <Link to="/books">Books</Link>
-          <Link to="/form">Categories</Link>
+          <Link to="/categories">Categories</Link>
         </nav>
       </header>
     </>
