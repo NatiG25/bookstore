@@ -5,7 +5,7 @@ export default function Header() {
   return (
     <>
       <header className="header">
-        <h1>Bookstore</h1>
+        <a href='#' className='bookstore-title'>Bookstore CMS</a>
         <nav>
           <Link to="/books">Books</Link>
           <Link to="/categories">Categories</Link>
