@@ -29,7 +29,7 @@ To get a local copy up and running follow these simple example steps.
 - get the directory that you want to clone the repository.
 - open the command prompt in this directory.
 - write git clone git@github.com:NatiG25/Bookstore.git
-- go to the repository folder in your command prompt cd math-magicians
+- go to the repository folder in your command prompt cd Bookstore
 - use npm install to install the dependencies.
 - use npm start to start live server.
 
