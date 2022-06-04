@@ -7,7 +7,7 @@ export default function Header() {
       <header className="header">
         <h1 className="bookstore-title">Bookstore CMS</h1>
         <nav>
-          <Link to="/books">Books</Link>
+          <Link to="/">Books</Link>
           <Link to="/categories">Categories</Link>
         </nav>
       </header>

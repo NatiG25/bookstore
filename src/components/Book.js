@@ -6,7 +6,6 @@ export default function Book({ title, author }) {
     title: PropTypes.string.isRequired,
     author: PropTypes.string.isRequired,
   };
-
   return (
     <>
       <ul>
