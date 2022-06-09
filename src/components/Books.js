@@ -34,7 +34,6 @@ class Books extends React.Component {
         <main>
           {this.books.map((book) => <Book title={book.title} author={book.author} key={book.id} />)}
           <Form />
-          <button type="button">Remove</button>
         </main>
       </>
     );

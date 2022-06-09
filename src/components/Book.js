@@ -15,6 +15,7 @@ export default function Book({ title, author }) {
           :
           {' '}
           {author}
+          <button type="button">Remove</button>
         </li>
       </ul>
     </>

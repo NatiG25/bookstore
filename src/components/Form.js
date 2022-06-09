@@ -7,6 +7,7 @@ export default function Form() {
       <form>
         <input type="text" placeholder="Enter Book Title" />
         <input type="text" placeholder="Enter Author Name" />
+        <button type="button">Add Book</button>
       </form>
     </>
   );
