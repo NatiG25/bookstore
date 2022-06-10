@@ -1,31 +1,35 @@
+import { v4 as uuid } from 'uuid';
+
 const ADD = 'add';
 const REMOVE = 'remove';
 
 // Action Creators
-export const adding = () => {
-    return {
-        type: ADD,
-    }
-}
+export const adding = (payload) => {
+  const obj = {
+    type: ADD,
+    payload: { ...payload, id: uuid() },
+  };
 
-export const remove = () => {
-    return {
-        type: REMOVE,
-    }
-}
+  return obj;
+};
+
+export const remove = (payload) => ({
+  type: REMOVE,
+  payload,
+});
 
 // Reducers
 const bookReducer = (state = [], action) => {
-    switch(action.type) {
-        case ADD:
-        return
+  switch (action.type) {
+    case ADD:
+      return [...state, action.payload];
 
-        case REMOVE:
-        return
+    case REMOVE:
+      return state.filter((book) => book.id !== action.payload);
 
-        default:
-            return state;
-    }
-}
+    default:
+      return state;
+  }
+};
 
 export default bookReducer;
