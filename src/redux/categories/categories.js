@@ -1,4 +1,4 @@
-const CHECKSTATUS = 'CHECKSTATUS'
+const CHECKSTATUS = 'CHECKSTATUS';
 export const checkStatus = ({ type: CHECKSTATUS });
 
 const categoriesReducer = (state = { categories: [] }, action) => {
