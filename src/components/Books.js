@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { addBooks, removeBooks } from '../redux/books/books';
+import { addBooks, fetchBooks, removeBooks } from '../redux/books/books';
 import Book from './Book';
 import AddBooks from './AddBooks';
 
@@ -14,6 +14,10 @@ const Books = () => {
   const deleteBooks = (id) => {
     dispatch(removeBooks(id));
   };
+
+  useEffect(() => {
+    dispatch(fetchBooks());
+  }, []);
 
   return (
     <>
