@@ -5,10 +5,10 @@ export default function Header() {
   return (
     <>
       <header className="header">
-        <h1 className="bookstore-title">Bookstore CMS</h1>
+        <h1 className="header-title">Bookstore CMS</h1>
         <nav>
-          <Link to="/">Books</Link>
-          <Link to="/categories">Categories</Link>
+          <Link className="header-books" to="/">Books</Link>
+          <Link className="header-category" to="/categories">Categories</Link>
         </nav>
       </header>
     </>

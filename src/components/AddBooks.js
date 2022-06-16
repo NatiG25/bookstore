@@ -24,11 +24,11 @@ export default function AddBooks() {
 
   return (
     <>
-      <h2>Add A Book</h2>
-      <form onSubmit={(e) => handleAddBook(e)}>
-        <input type="text" ref={titleRef} placeholder="Enter Book Title" />
-        <input type="text" ref={authorRef} placeholder="Enter Author Name" />
-        <button type="submit">Add Book</button>
+      <h2 className="addHeader">Add A Book</h2>
+      <form className="addFormContainer">
+        <input className="addTitle" type="text" ref={titleRef} placeholder="Book Title" />
+        <input className="addAuthor" type="text" ref={authorRef} placeholder="Author Name" />
+        <a href="/" onClick={(e) => handleAddBook(e)}>Add Book</a>
       </form>
     </>
   );
