@@ -82,7 +82,6 @@ body {
   margin: 0.25rem 0 1.3rem 0;
   font-family: RobotoSlab, sans-serif;
   font-size: 0.875rem;
-  font-weight: 300;
 }
 
 .bookCommands > a {
@@ -98,7 +97,7 @@ body {
   font-size: 1.25rem;
   font-weight: bold;
   letter-spacing: -0.18px;
-  color: #888888;
+  color: #888;
 }
 
 .addTitle {
@@ -115,7 +114,7 @@ body {
   border: solid 1px #e8e8e8;
   background-color: #fff;
 }
-  
+
 .addFormContainer > a {
   margin: 1.188rem 0 0 2.125rem;
   padding: 0.801rem 1.188rem 0.886rem 1.375rem;
@@ -178,7 +177,7 @@ body {
 .chapterStatus {
   margin: 0.063rem 3.625rem 0 3.688rem;
   opacity: 0.5;
-  font-family: RobotoSlab,sans-serif;
+  font-family: RobotoSlab, sans-serif;
   font-size: 0.813rem;
   font-weight: 300;
   color: #121212;
@@ -186,7 +185,7 @@ body {
 
 .currentChapter {
   margin: 0.438rem 6.813rem 0.25rem 3.688rem;
-  font-family: RobotoSlab,sans-serif;
+  font-family: RobotoSlab, sans-serif;
   font-size: 1rem;
   font-weight: 300;
   letter-spacing: -0.4px;
@@ -194,7 +193,7 @@ body {
 }
 
 .updateChapter {
-  font-family: RobotoSlab,sans-serif;
+  font-family: RobotoSlab, sans-serif;
   color: white;
   margin: 0.75rem 0 0.563rem 3.688rem;
   padding: 0.438rem 1.188rem 0.5rem 1.375rem;
