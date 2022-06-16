@@ -1,22 +1,23 @@
 import React, { useRef } from 'react';
 import { v4 as uuid } from 'uuid';
-import PropTypes from 'prop-types';
+import { useDispatch } from 'react-redux';
+import { postBooks } from '../redux/books/books';
 
-export default function AddBooks({ newBooks }) {
-  AddBooks.propTypes = {
-    newBooks: PropTypes.func.isRequired,
-  };
+export default function AddBooks() {
   const titleRef = useRef();
   const authorRef = useRef();
+  const dispatch = useDispatch();
 
   const handleAddBook = (e) => {
     e.preventDefault();
     const newBook = {
-      id: uuid(),
+      item_id: uuid(),
       title: titleRef.current.value,
       author: authorRef.current.value,
+      category: 'category',
     };
-    newBooks(newBook);
+
+    dispatch(postBooks(newBook));
     titleRef.current.value = '';
     authorRef.current.value = '';
   };
